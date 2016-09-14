@@ -1,0 +1,7 @@
+timestamp,event,cookie_id,email
+1,page_view,111,
+2,details_submitted,111,a@a.com
+3,page_view,555,
+4,page_view,888,
+5,policy_sold,555,a@a.com
+6,details_submitted,888,b@b.com
