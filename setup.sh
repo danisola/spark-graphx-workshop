@@ -8,7 +8,7 @@ SPARK_HOME=$INSTALL_DIR/$SPARK_VERSION
 
 # Downloading and extracting Spark
 mkdir -p $INSTALL_DIR
-wget -P $INSTALL_DIR $SPARK_URL -nv
+curl $SPARK_URL --output $INSTALL_DIR/$SPARK_VERSION.tgz
 tar -zxf $INSTALL_DIR/$SPARK_VERSION.tgz -C $INSTALL_DIR
 conf_file=$SPARK_HOME/conf/spark-defaults.conf
 echo "spark.executor.memory 2g" >> $conf_file
